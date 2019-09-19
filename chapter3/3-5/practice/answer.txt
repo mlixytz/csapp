@@ -1,4 +1,7 @@
-3.6: 6 + x, x + y, x + 4 * y, 7 + 9 * x, 10 + 4 * y, 9 + 2 * y + x
-3.7: 5 * x + 2 * y + 8 * z
-3.8: (0x100,0x100), (0x108, 0xA8), (0x118, 0x110), (0x110, 0x14), (%rcx, 0x0), (%rax, 0xFD)
-3.9: (salq $4, %rax), (sarq %cl, %rax)
+3.6:	6 + x, x + y, x + 4 * y, 7 + 9 * x, 10 + 4 * y, 9 + 2 * y + x
+3.7:	5 * x + 2 * y + 8 * z
+3.8:	(0x100,0x100), (0x108, 0xA8), (0x118, 0x110), (0x110, 0x14), (%rcx, 0x0), (%rax, 0xFD)
+3.9:	(salq $4, %rax), (sarq %cl, %rax)
+3.11:	A:  set %rdx to 0
+	B:  movq $0, %rdx
+	C:  movq needs 7 bytes and xorq needs 3 bytes
