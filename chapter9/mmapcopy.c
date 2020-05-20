@@ -23,7 +23,7 @@ int main(int argc, char *argv[]) {
 	printf("Error: cannot stat file %s\n", argv[1]);
         exit(0);
     }
-    if((fp = mmap(NULL, buf.st_size, PROT_READ, MAP_PRIVATE, 1, 0)) == NULL){
+    if((fp = mmap(NULL, buf.st_size, PROT_READ, MAP_PRIVATE, fd, 0)) == NULL){
 	printf("Error: mmap\n");
 	exit(0);
     }
