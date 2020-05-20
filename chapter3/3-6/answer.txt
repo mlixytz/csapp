@@ -1,0 +1,10 @@
+3.13:	int、a < b
+	short、>=
+	unsigned char、<=
+	long/unsigned long、!=
+
+3.14:	long、>= 0
+	short/unsigned short、== 0
+	unsigned char、> 0
+	int、!= 0
+
